@@ -10,6 +10,7 @@ import EnderecosScreen from '@/screens/Enderecos/EditarEnderecosScreen';
 import FabricantesScreen from '@/screens/Fabricantes/FabricantesScreen';
 import FuncionariosScreen from '@/screens/Funcionarios/FuncionariosScreen';
 import UnidadesScreen from '@/screens/Unidades/UnidadesScreen';
+import VacinasScreen from '@/screens/Vacinas/VacinasScreen';
 
 
 export type DrawerParamList = {
@@ -58,6 +59,14 @@ const DrawerNavigator = () => {
         }}
       />
       <Drawer.Screen
+        name="Vacinas"
+        component={VacinasScreen}
+        options={{
+          drawerIcon: ({ color, size }) => <Ionicons name="eyedrop-outline" size={size} color={color} />,
+          title: 'Vacinas',
+        }}
+      />
+      <Drawer.Screen
         name="Unidades"
         component={UnidadesScreen}
         options={{
@@ -69,7 +78,7 @@ const DrawerNavigator = () => {
         name="Enderecos"
         component={EnderecosScreen}
         options={{
-          drawerIcon: ({ color, size }) => <Ionicons name="calendar-outline" size={size} color={color} />,
+          drawerIcon: ({ color, size }) => <Ionicons name="golf-outline" size={size} color={color} />,
           title: 'Endereços',
         }}
       />
