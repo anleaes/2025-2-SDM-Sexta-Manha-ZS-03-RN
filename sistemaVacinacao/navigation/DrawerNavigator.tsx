@@ -5,6 +5,7 @@ import CustomDrawerContent from '../components/CustomDrawerContent';
 import HomeScreen from '@/screens/HomeScreen';
 import AgendamentosScreen from '@/screens/Agendamentos/AgendamentosScreen';
 import CartoesScreen from '@/screens/Cartoes/CartoesScreen';
+import CidadaosScreen from '@/screens/Cidadaos/CidadaosScreen';
 
 
 export type DrawerParamList = {
@@ -52,6 +53,14 @@ const DrawerNavigator = () => {
           title: 'Agendamentos',
         }}
       />
+      <Drawer.Screen
+        name="Cidadaos"
+        component={CidadaosScreen}
+        options={{
+          drawerIcon: ({ color, size }) => <Ionicons name="person-add-outline" size={size} color={color} />,
+          title: 'Cidadãos',
+        }}
+      />  
       <Drawer.Screen
         name="Cartao"
         component={CartoesScreen}
