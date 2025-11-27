@@ -49,7 +49,7 @@ const CriarAgendamentosScreen = ({ navigation }: Props) => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Nova vacina</Text>
+      <Text style={styles.title}>Novo Agendamento</Text>
       <Text style={styles.label}>Data Marcada</Text>
             <TextInput
               value={dataMarcada}

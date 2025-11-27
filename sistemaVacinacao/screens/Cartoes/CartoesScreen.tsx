@@ -50,11 +50,11 @@ const CartoesScreen = ({ navigation }: Props) => {
 
   const renderItem = ({ item }: { item: Cartao }) => (
     <View style={styles.card}>
-      <Text style={styles.numero}>{item.numero}</Text>
+      <Text style={styles.numero}>Número: {item.numero}</Text>
       <Text style={styles.criacao}>Id: {item.id}</Text>
-      <Text style={styles.criacao}>{item.criacao}</Text>
-      <Text style={styles.zona}>{item.zona}</Text>
-      <Text style={styles.status}>{item.status}</Text>
+      <Text style={styles.criacao}>Criação: {item.criacao}</Text>
+      <Text style={styles.zona}>Zona: {item.zona}</Text>
+      <Text style={styles.status}>Status: {item.status}</Text>
       <TouchableOpacity
         style={styles.editButton}
         onPress={() => navigation.navigate('EditarCartoes', { cartoes: item })}

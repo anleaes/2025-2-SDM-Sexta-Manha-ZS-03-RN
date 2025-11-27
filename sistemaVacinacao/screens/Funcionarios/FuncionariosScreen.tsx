@@ -51,11 +51,11 @@ const FuncionariosScreen = ({ navigation }: Props) => {
 
   const renderItem = ({ item }: { item: Funcionarios }) => (
     <View style={styles.card}>
-      <Text style={styles.nome}>{item.nome}</Text>
+      <Text style={styles.nome}>Nome: {item.nome}</Text>
       <Text style={styles.cpf}>Id: {item.id}</Text>
-      <Text style={styles.cpf}>{item.cpf}</Text>
-      <Text style={styles.cargo}>{item.cargo}</Text>
-      <Text style={styles.registro}>{item.registro}</Text>
+      <Text style={styles.cpf}>Cpf: {item.cpf}</Text>
+      <Text style={styles.cargo}>Cargo: {item.cargo}</Text>
+      <Text style={styles.registro}>Registo: {item.registro}</Text>
       <Text style={styles.unidade}>Unidade ID: {item.unidade}</Text>
       <TouchableOpacity
         style={styles.editButton}

@@ -62,7 +62,7 @@ const CriarCidadaosScreen = ({ navigation }: Props) => {
               onChangeText={setcpf}
               style={styles.input}
             />
-          <Text style={styles.label}>nascimento (AAAA-MM-DD)</Text>
+          <Text style={styles.label}>Nascimento (AAAA-MM-DD)</Text>
           <TextInput
               value={nascimento}
               placeholder="Formato: AAAA-MM-DD"
@@ -70,7 +70,7 @@ const CriarCidadaosScreen = ({ navigation }: Props) => {
               onChangeText={setnascimento}
               style={styles.input}
             />
-          <Text style={styles.label}>idade </Text>
+          <Text style={styles.label}>Idade </Text>
           <TextInput
               value={idade}
               onChangeText={setidade}
@@ -79,6 +79,8 @@ const CriarCidadaosScreen = ({ navigation }: Props) => {
             <Text style={styles.label}>Endereco (IDs separados por vírgula)</Text>
           <TextInput
               value={endereco}
+              placeholder="Formato: 1,2,3,..."
+              placeholderTextColor="#999"
               onChangeText={setEndereco}
               style={styles.input}
             />

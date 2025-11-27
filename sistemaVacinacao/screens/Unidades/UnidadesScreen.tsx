@@ -51,11 +51,11 @@ const UnidadesScreen = ({ navigation }: Props) => {
 
   const renderItem = ({ item }: { item: Unidades }) => (
     <View style={styles.card}>
-      <Text style={styles.nome}>{item.nome}</Text>
+      <Text style={styles.nome}>Nome: {item.nome}</Text>
       <Text style={styles.zona}>Id: {item.id}</Text>
-      <Text style={styles.zona}>{item.zona}</Text>
-      <Text style={styles.telefone}>{item.telefone}</Text>
-      <Text style={styles.tipo}>{item.tipo}</Text>
+      <Text style={styles.zona}>Zona: {item.zona}</Text>
+      <Text style={styles.telefone}>Telefone: {item.telefone}</Text>
+      <Text style={styles.tipo}>Tipo: {item.tipo}</Text>
       <Text style={styles.endereco}>Endereço ID: {item.endereco}</Text>
       <TouchableOpacity
         style={styles.editButton}
