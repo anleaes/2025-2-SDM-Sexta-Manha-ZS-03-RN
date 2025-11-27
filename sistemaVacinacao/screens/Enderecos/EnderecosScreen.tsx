@@ -51,11 +51,11 @@ const EnderecosScreen = ({ navigation }: Props) => {
 
   const renderItem = ({ item }: { item: Enderecos }) => (
     <View style={styles.card}>
-      <Text style={styles.rua}>{item.rua}</Text>
+      <Text style={styles.rua}>Rua: {item.rua}</Text>
       <Text style={styles.bairro}>Id: {item.id}</Text>
-      <Text style={styles.bairro}>{item.bairro}</Text>
-      <Text style={styles.cidade}>{item.cidade}</Text>
-      <Text style={styles.estado}>{item.estado}</Text>
+      <Text style={styles.bairro}>Bairro: {item.bairro}</Text>
+      <Text style={styles.cidade}>Cidade: {item.cidade}</Text>
+      <Text style={styles.estado}>Estado: {item.estado}</Text>
       <TouchableOpacity
         style={styles.editButton}
         onPress={() => navigation.navigate('EditarEnderecos', { enderecos: item })}

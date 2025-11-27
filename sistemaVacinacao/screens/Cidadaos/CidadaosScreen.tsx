@@ -52,11 +52,11 @@ const CidadaosScreen = ({ navigation }: Props) => {
 
   const renderItem = ({ item }: { item: Cidadaos }) => (
     <View style={styles.card}>
-      <Text style={styles.nome}>{item.nome}</Text>
+      <Text style={styles.nome}>Nome: {item.nome}</Text>
       <Text style={styles.cpf}>Id: {item.id}</Text>
-      <Text style={styles.cpf}>{item.cpf}</Text>
-      <Text style={styles.nascimento}>{item.nascimento}</Text>
-      <Text style={styles.idade}>{item.idade}</Text>
+      <Text style={styles.cpf}>Cpf: {item.cpf}</Text>
+      <Text style={styles.nascimento}>Nascimento: {item.nascimento}</Text>
+      <Text style={styles.idade}>Idade: {item.idade}</Text>
       <Text style={styles.endereco}>Endereco ID: {item.endereco.join(', ')}</Text>
       <Text style={styles.endereco}>Cartão ID: {item.cartao}</Text>
       <TouchableOpacity

@@ -51,11 +51,11 @@ const FabricantesScreen = ({ navigation }: Props) => {
 
   const renderItem = ({ item }: { item: Fabricantes }) => (
     <View style={styles.card}>
-      <Text style={styles.nome}>{item.nome}</Text>
+      <Text style={styles.nome}>Nome: {item.nome}</Text>
       <Text style={styles.cnpj}>Id: {item.id}</Text>
-      <Text style={styles.cnpj}>{item.cnpj}</Text>
-      <Text style={styles.telefone}>{item.telefone}</Text>
-      <Text style={styles.email}>{item.email}</Text>
+      <Text style={styles.cnpj}>Cnpj: {item.cnpj}</Text>
+      <Text style={styles.telefone}>Telefone: {item.telefone}</Text>
+      <Text style={styles.email}>Email: {item.email}</Text>
       <Text style={styles.endereco}>Endereco ID: {item.endereco}</Text>
       <TouchableOpacity
         style={styles.editButton}

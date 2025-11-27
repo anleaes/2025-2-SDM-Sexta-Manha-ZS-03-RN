@@ -51,11 +51,11 @@ const VacinasScreen = ({ navigation }: Props) => {
 
   const renderItem = ({ item }: { item: Vacinas }) => (
     <View style={styles.card}>
-      <Text style={styles.nome}>{item.nome}</Text>
+      <Text style={styles.nome}>Nome:{item.nome}</Text>
       <Text style={styles.doses}>Id: {item.id}</Text>
-      <Text style={styles.doses}>{item.doses}</Text>
-      <Text style={styles.intervaloDias}>{item.intervaloDias}</Text>
-      <Text style={styles.doenca}>{item.doenca}</Text>
+      <Text style={styles.doses}>Doses{item.doses}</Text>
+      <Text style={styles.intervaloDias}>Intervalo de dias: {item.intervaloDias}</Text>
+      <Text style={styles.doenca}>Doença: {item.doenca}</Text>
       <Text style={styles.fabricante}>Fabricantes ID: {item.fabricante}</Text>
       <TouchableOpacity
         style={styles.editButton}

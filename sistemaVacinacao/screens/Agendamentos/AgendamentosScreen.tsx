@@ -54,11 +54,11 @@ const AgendamentosScreen = ({ navigation }: Props) => {
 
   const renderItem = ({ item }: { item: Agendamentos }) => (
     <View style={styles.card}>
-      <Text style={styles.dataMarcada}>{item.dataMarcada}</Text>
+      <Text style={styles.dataMarcada}>Data Marcada: {item.dataMarcada}</Text>
       <Text style={styles.status}>Id: {item.id}</Text>
-      <Text style={styles.status}>{item.status}</Text>
-      <Text style={styles.observacoes}>{item.observacoes}</Text>
-      <Text style={styles.prioridade}>{item.prioridade}</Text>
+      <Text style={styles.status}>Status: {item.status}</Text>
+      <Text style={styles.observacoes}>Observações: {item.observacoes}</Text>
+      <Text style={styles.prioridade}>Prioridade: {item.prioridade}</Text>
       <Text style={styles.unidade}>Unidade ID: {item.unidade}</Text>
       <Text style={styles.unidade}>Vacina ID: {item.vacina}</Text>
       <Text style={styles.unidade}>Cidadão ID: {item.cidadao}</Text>
