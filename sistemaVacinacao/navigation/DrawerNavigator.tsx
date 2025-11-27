@@ -3,7 +3,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import React from 'react';
 import CustomDrawerContent from '../components/CustomDrawerContent';
 import HomeScreen from '@/screens/HomeScreen';
-import AgendamentosScreen from '@/screens/Agendamentos/AgendamentosScreen';
+import AgendamentosScreen, {Agendamentos} from '@/screens/Agendamentos/AgendamentosScreen';
 import CartoesScreen, { Cartao } from '@/screens/Cartoes/CartoesScreen';
 import CidadaosScreen, {Cidadaos} from '@/screens/Cidadaos/CidadaosScreen';
 import EnderecosScreen, { Enderecos } from '@/screens/Enderecos/EnderecosScreen';
@@ -25,6 +25,8 @@ import CriarCidadaosScreen from '@/screens/Cidadaos/CriarCidadaosScreen';
 import EditarCidadaosScreen from '@/screens/Cidadaos/EditarCidadaosScreen';
 import CriarVacinasScreen from '@/screens/Vacinas/CriarVacinasScreen';
 import EditarVacinasScreen from '@/screens/Vacinas/EditarVacinasScreen';
+import CriarAgendamentosScreen from '@/screens/Agendamentos/CriarAgendamentosScreen';
+import EditarAgendamentosScreen from '@/screens/Agendamentos/EditarAgendamentosScreen';
 
 
 
@@ -33,6 +35,8 @@ export type DrawerParamList = {
     EditarVacinas: {vacinas: Vacinas};
     CriarVacinas: undefined;
     Agendamentos: undefined;
+    EditarAgendamentos: {agendamentos: Agendamentos};
+    CriarAgendamentos: undefined;
     Cartao: undefined;
     EditarCartoes: {cartoes: Cartao};
     CriarCartoes: undefined;
@@ -86,6 +90,16 @@ const DrawerNavigator = () => {
           drawerIcon: ({ color, size }) => <Ionicons name="calendar-outline" size={size} color={color} />,
           title: 'Agendamentos',
         }}
+      />
+      <Drawer.Screen
+        name="CriarAgendamentos"
+        component={CriarAgendamentosScreen}
+        options={{ drawerItemStyle: { display: 'none' }, title: 'Agendamentos' }}
+      />
+      <Drawer.Screen
+        name="EditarAgendamentos"
+        component={EditarAgendamentosScreen}
+        options={{ drawerItemStyle: { display: 'none' }, title: 'Editar Agendamentos' }}
       />
       <Drawer.Screen
         name="Vacinas"
